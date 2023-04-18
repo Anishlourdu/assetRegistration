@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="secondstyle.css">
+    <link rel="Icon" href="/Redgrape/MiniProject/favicon (1).ico">
+    <link rel='stylesheet' type='text/css' href='secondstyle.php' />
+    <script src="https://kit.fontawesome.com/d6fc016473.js" crossorigin="anonymous"></script>
+    <style>
+         .container{
+        height: 200px;
+        position: relative;
+        border: hsl(122, 82%, 57%);
+        align-items: center;
+       align-self: center;
+       }
+       form{
+      
+        width: 1700px;
+        size: 100px;
+       }
+    </style>
+ <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000;
+     }
+    
+    .navbar {
+      width: 100%;
+      background-color: rgb(18, 18, 18);
+      overflow: auto;
+    }
+    
+    .navbar a {
+      float: left;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .navbar a:hover {
+      background-color: #000;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+      }
+    }
+    </style>
+
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+
+</head>
+<body>
+  <form action="search.php">
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="first.html"><i class="fa fa-fw fa-search"></i> Register</a> 
+        <a href=""><i class="fa fa-fw fa-envelope"></i> Search</a> 
+        
+      </div>
+
+      <div class="container"></div>
+      <form class="example" action="search.php" method="post" style="margin:auto;max-width:300px">
+          <input type="int" placeholder="Search.." name="AssetID" id="AssetID">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      
+    </form>
+      
+  
+</body>
+</html>
